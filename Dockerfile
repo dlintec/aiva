@@ -4,7 +4,7 @@ MAINTAINER Wah Loon Keng <kengzwl@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Get latest Node 6 install script and save it to /tmp
-ADD https://raw.githubusercontent.com/nodesource/distributions/master/deb/setup_6.x /tmp/node6_setup.sh
+ADD https://raw.githubusercontent.com/nodesource/distributions/master/deb/setup_7.x /tmp/node6_setup.sh
 
 # Run node installer script to prepare apt-get for later install
 RUN cat /tmp/node6_setup.sh | bash \
